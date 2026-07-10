@@ -131,39 +131,71 @@ print(cm)
 #Saving the model
 #----
 
-model.save('leafvision_efficientnet_v1.keras')
-print("Model saved as 'leafvision_efficientnet_v1.keras'")
-
-print(train_generator.class_indices)
-
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pandas as pd
+from sklearn.metrics import classification_report, confusion_matrix
 
-plt.figure(figsize=(8,6))
+model.save('leafvision_efficientnet_v1.keras')
+print("Model saved as 'leafvision_efficientnet_v1.keras'")
+print("Class indices:", train_generator.class_indices)
+
+
+# ───
+# 2. CONFUSION MATRIX ->  saved as confusion_matrix.png
+# ───
+plt.figure(figsize=(8, 6))
 
 sns.heatmap(
     cm,
     annot=True,
     fmt='d',
     cmap='Blues',
+    xticklabels=list(test_generator.class_indices.keys()),
+    yticklabels=list(test_generator.class_indices.keys())
 )
 
-plt.xlabel("Predicted")
-plt.ylabel("Actual")
-plt.title("Confusion Matrix")
-
+plt.xlabel("Predicted", fontsize=12)
+plt.ylabel("Actual", fontsize=12)
+plt.title("Confusion Matrix — LeafVision EfficientNet-B0", fontsize=14)
+plt.tight_layout()
+plt.savefig('confusion_matrix.png', dpi=150)
 plt.show()
+print("Saved: confusion_matrix.png")
 
 
-from sklearn.metrics import classification_report
-
-print(
-    classification_report(
-        true_classes,
-        predicted_classes,
-        target_names=test_generator.class_indices.keys()
-    )
+# ─────
+# 3. Classification Report ->  saved as classification_report.png
+# ─────
+report = classification_report(
+    true_classes,
+    predicted_classes,
+    target_names=list(test_generator.class_indices.keys()),
+    output_dict=True
 )
+
+df = pd.DataFrame(report).transpose().round(2)
+
+fig, ax = plt.subplots(figsize=(9, 3.5))
+ax.axis('off')
+
+table = ax.table(
+    cellText=df.values,
+    colLabels=df.columns,
+    rowLabels=df.index,
+    cellLoc='center',
+    loc='center'
+)
+
+table.auto_set_font_size(False)
+table.set_fontsize(11)
+table.scale(1.2, 1.8)
+
+plt.title("Classification Report — LeafVision EfficientNet-B0", fontsize=13, pad=16)
+plt.tight_layout()
+plt.savefig('classification_report.png', dpi=150, bbox_inches='tight')
+plt.show()
+print("Saved: classification_report.png")
 
 
 

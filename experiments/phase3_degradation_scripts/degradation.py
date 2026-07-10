@@ -100,10 +100,10 @@ def apply_resolution_reduction(img, scale):
 
 
 CONDITION_FUNCTIONS = {
-    "brightness_contrast":  apply_brightness_contrast,
+    "brightness_contrast":  apply_brightness_contrast,  
     "blur_gaussian":        apply_blur_gaussian,
     "noise_gaussian":       apply_noise_gaussian,
     "resolution_reduction": apply_resolution_reduction,
 }
 
-
+#This stores the function objects 
