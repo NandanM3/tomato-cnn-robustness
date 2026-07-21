@@ -34,6 +34,7 @@ leafvision/
 │   ├── baseline/    # same architecture, trained from scratch
 │   └── common/              # shared model def, dataloaders, utils
 ├── experiments/
+|   |── phase1_dataprep/        # Splitting dataset
 │   ├── phase2_clean_eval/       # baseline metrics on clean data(data set below)
 │   ├── phase3_degradation/      # scripts that generate degraded image sets(from same data set)
 │   ├── phase4_robustness_eval/  # eval on degraded sets + aggregation

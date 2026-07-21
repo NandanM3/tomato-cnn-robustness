@@ -31,7 +31,7 @@ TEST_DIR   = Path("data") / "Tomato_Leaf_Data_Split" / "test"
 OUTPUT_DIR = Path("data") / "synthetic"
  
  
-#---IMAGE I/O 
+#IMAGE I/O 
  
 def load_image(path):
     img = cv2.imread(str(path))             # str() for older OpenCV compatibility
@@ -45,15 +45,15 @@ def save_image(img, path):
     cv2.imwrite(str(path), cv2.cvtColor(img, cv2.COLOR_RGB2BGR))
  
  
-# --- MAIN LOOP 
+# MAIN LOOP 
  
 def generate_all():
     """
     For every image in data/processed/test/, apply all conditions and
     severity levels, and write outputs to data/synthetic/.
  
-    Loop order: class → image → condition → severity
-    This works well becuase we need to load each img only once
+    Loop order: class -> image -> condition -> severity
+    Works well becuase we need to load each img only once
     Output path structure mirrors the input class structure:
         data/synthetic/{condition}/{severity}/{class}/{original_filename}
  
@@ -125,7 +125,7 @@ def generate_all():
     print(f"\nFinished. {total_written} total degraded images written to {OUTPUT_DIR}")
  
  
-# ---- SANITY CHECK
+# SANITY CHECK
  
 def sanity_check(class_name=None):
     """
@@ -166,7 +166,7 @@ def sanity_check(class_name=None):
     print("Run generate_all() only after confirming severity levels look correct.")
  
  
-# --- ENTRY POINT 
+ 
  
 if __name__ == "__main__":
 
