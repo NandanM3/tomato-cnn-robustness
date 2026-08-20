@@ -1,0 +1,26 @@
+{
+  "accuracy": 0.7533234859675036,
+  "macro_precision": 0.8001700680272109,
+  "macro_recall": 0.7388162988772744,
+  "macro_f1": 0.7407417834607917,
+  "per_class": {
+    "Tomato___Early_blight": {
+      "precision": 0.7142857142857143,
+      "recall": 0.7333333333333333,
+      "f1": 0.7236842105263158,
+      "support": 150
+    },
+    "Tomato___Late_blight": {
+      "precision": 0.6862244897959183,
+      "recall": 0.9372822299651568,
+      "f1": 0.792341678939617,
+      "support": 287
+    },
+    "Tomato___healthy": {
+      "precision": 1.0,
+      "recall": 0.5458333333333333,
+      "f1": 0.706199460916442,
+      "support": 240
+    }
+  }
+}

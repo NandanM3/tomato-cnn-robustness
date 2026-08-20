@@ -21,12 +21,12 @@ from eval_utils import (
     save_confusion_matrix,
 )
 
-
-MODEL_PATH = "leafvision_efficientnet_v1.keras"
+#Change model and results path based on baseline/transfer learning model
+MODEL_PATH = "tomato_leaf_disease_model.h5"
 TRAIN_DIR = "data/Tomato_Leaf_Data_Split/train" 
 TEST_DIR = "data/Tomato_Leaf_Data_Split/test"
-RESULTS_PATH = "results/tables/phase2_clean_eval.json"
-CONFUSION_MATRIX_PATH = "results/figures/phase2_confusion_matrix.png"
+RESULTS_PATH = "results/tables/phase2_clean_eval_scratch.json"
+CONFUSION_MATRIX_PATH = "results/figures/phase2_confusion_matrix_scratch.png"
 
 
 def main():

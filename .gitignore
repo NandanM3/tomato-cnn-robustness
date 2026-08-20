@@ -38,15 +38,9 @@ data/field_validation/
 results/logs/
 *.log
 
-# Large generated result artifacts (keep tables/figures you've finalized, ignore working dumps)
-results/tmp/
 
-# Paper build artifacts (if using LaTeX later)
+# Paper build artifacts for LateX
 *.aux
 *.toc
 *.out
 
-# Holding  results/paper text private until ready to share publicly
-# (remove these two lines when ready to make results/paper visible)
-results/
-paper/drafts/

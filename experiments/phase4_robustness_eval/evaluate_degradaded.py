@@ -19,11 +19,12 @@ sys.path.append(str(Path(__file__).resolve().parents[1] / "phase3_degradation_sc
 from eval_utils import infer_class_names, evaluate_directory, compute_metrics
 from degradation import DEGRADATION_CONFIG
  
-# adjust these to match your repo 
-MODEL_PATH = r"C:/Users/Menon/OneDrive/Documents/LeafVision-ML/leafvision_efficientnet_v1.keras"
+# adjust these to match your repo
+# change model path and results path to change model
+MODEL_PATH = r"tomato_leaf_disease_model.h5"
 TRAIN_DIR = "data/Tomato_Leaf_Data_Split/train"  # source of truth for class index order
 SYNTHETIC_ROOT = "data/synthetic"
-RESULTS_PATH = "results/tables/phase4_robustness_eval.csv"
+RESULTS_PATH = "results/tables/phase4_robustness_eval_scratch.csv"
  
  
 def main():
