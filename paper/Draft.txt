@@ -1,18 +1,6 @@
-
-None selected
-
-Skip to content
-Using Gmail with screen readers
-Conversations
-   
-7% of 15 GB used
-Terms · Privacy · Programme Policies
-Last account activity: 3 hours ago
-Details
-
 # Evaluating the Reliability and Practical Viability of CNN-Based Early-Stage Plant Disease Detection Under Simulated Real-World Conditions
 
-*[Author name], [Institution/Affiliation], August 2026*
+*[Nandan Menon], [Vidyashilp Academy], August 2026*
 
 ## Abstract
 
@@ -264,6 +252,3 @@ Strange, R. N., & Scott, P. R. (2005). Plant disease: A threat to global food se
 Sugiyama, M., Suzuki, T., Nakajima, S., Kashima, H., von Bünau, P., & Kawanabe, M. (2008). Direct importance estimation for covariate shift adaptation. *Annals of the Institute of Statistical Mathematics*, *60*(4), 699–746. https://doi.org/10.1007/s10463-008-0197-x
 
 Sun, X., Li, G., Qu, P., Xie, X., Pan, X., & Zhang, W. (2022). Research on plant disease identification based on CNN. *Cognitive Robotics*, *2*, 155–163. https://doi.org/10.1016/j.cogr.2022.07.001
-
-LEAFVI~2.MD
-Displaying LEAFVI~2.MD.
