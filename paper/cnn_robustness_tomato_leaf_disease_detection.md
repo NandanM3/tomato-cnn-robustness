@@ -1,6 +1,6 @@
 # Evaluating the Reliability and Practical Viability of CNN-Based Early-Stage Plant Disease Detection Under Simulated Real-World Conditions
 
-*[Nandan Menon], [Vidyashilp Academy], August 2026*
+*Nandan Menon, Vidyashilp Academy, August 2026*
 
 ## Abstract
 
@@ -8,7 +8,7 @@ Convolutional neural networks achieve near-perfect accuracy on curated plant dis
 
 **Keywords:** plant disease detection; convolutional neural networks; corruption robustness; covariate shift; transfer learning; EfficientNet; precision agriculture
 
----
+
 
 # 1. Introduction
 
